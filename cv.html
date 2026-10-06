@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae (PDF & Interactive) | Mohcine BAALLA | ENSIAS Rabat</title>
+  <meta name="description" content="View and download the complete Academic Curriculum Vitae of Mohcine BAALLA, PhD Candidate in Computer Science & Cybersecurity at ENSIAS Rabat.">
+  <link rel="canonical" href="https://mohcine.site/cv.html">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Mohcine Baalla Homepage">
+        <div class="brand-symbol">MB</div>
+        <div class="brand-text">
+          <span class="brand-name">Mohcine BAALLA <span class="badge badge-sapphire" style="font-size: 0.68rem; padding: 2px 6px;">ENSIAS</span></span>
+          <span class="brand-tag">Smart Systems Lab (SSL) • UM5</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="competences.html" class="nav-link active">Competences & CV</a></li>
+          <li><a href="parcours.html" class="nav-link">Parcours</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Toggle Theme"></button>
+        <a href="assets/docs/CV_Mohcine_BAALLA.pdf" target="_blank" class="btn btn-sm btn-primary" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="research.html" class="mobile-nav-link">Research Interests</a></li>
+      <li><a href="publications.html" class="mobile-nav-link">Publications & Papers</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Testbeds & Projects</a></li>
+      <li><a href="competences.html" class="mobile-nav-link active">Competences & CV</a></li>
+      <li><a href="parcours.html" class="mobile-nav-link">Parcours / Journey</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="section" style="padding-top: 50px;">
+    <div class="container">
+      <div class="cv-banner">
+        <div class="cv-banner-text">
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span class="badge badge-amber">CNRST PASS Fellow</span>
+            <span class="badge badge-sapphire">CEDoc ENSIAS</span>
+          </div>
+          <h3>Curriculum Vitae Document Viewer</h3>
+          <p>
+            You can view the document embedded below or download the original high-resolution PDF file directly. You can also explore the interactive online version with full technical skill breakdowns.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="assets/docs/CV_Mohcine_BAALLA.pdf" target="_blank" class="cv-download-btn" download>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV (PDF)
+          </a>
+          <a href="competences.html" class="btn btn-secondary" style="color: #ffffff; border-color: rgba(255,255,255,0.3); text-align: center;">
+            Explore Interactive Skills Matrix
+          </a>
+        </div>
+      </div>
+
+      <!-- Embedded PDF Viewer Object -->
+      <div style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--card-shadow); height: 850px; margin-top: 20px;">
+        <object data="assets/docs/CV_Mohcine_BAALLA.pdf" type="application/pdf" width="100%" height="100%">
+          <div style="padding: 60px 20px; text-align: center;">
+            <h3 style="margin-bottom: 12px;">PDF Preview</h3>
+            <p class="text-muted" style="margin-bottom: 20px;">Your browser does not support inline PDF viewing. Please download the document below:</p>
+            <a href="assets/docs/CV_Mohcine_BAALLA.pdf" target="_blank" class="btn btn-primary" download>
+              Download CV_Mohcine_BAALLA.pdf
+            </a>
+          </div>
+        </object>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p style="font-size: 0.9rem; color: var(--text-muted);">&copy; 2026 Mohcine BAALLA. Smart Systems Laboratory (SSL) • ENSIAS • UM5 Rabat.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
