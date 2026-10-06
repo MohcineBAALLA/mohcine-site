@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peer-Reviewed Publications | Mohcine BAALLA | ENSIAS Rabat</title>
+  <meta name="description" content="Peer-reviewed scientific publications by Mohcine BAALLA: 1 MDPI Journal article and 4 IEEE, Springer, and international conference proceedings on SIoT Trust Management and Cybersecurity.">
+  <link rel="canonical" href="https://mohcine.site/publications.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mohcine.site/publications.html">
+  <meta property="og:title" content="Publications & BibTeX Records | Mohcine BAALLA">
+  <meta property="og:description" content="5 peer-reviewed published scientific works on SIoT Trust Management, Adversarial Threat Modeling, and zk-SNARKs.">
+  <meta property="og:image" content="https://mohcine.site/assets/images/siot_trust_architecture.jpg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Mohcine Baalla Homepage">
+        <div class="brand-symbol">MB</div>
+        <div class="brand-text">
+          <span class="brand-name">Mohcine BAALLA <span class="badge badge-sapphire" style="font-size: 0.68rem; padding: 2px 6px;">ENSIAS</span></span>
+          <span class="brand-tag">Smart Systems Lab (SSL) • UM5</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="publications.html" class="nav-link active">Publications</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="competences.html" class="nav-link">Competences</a></li>
+          <li><a href="parcours.html" class="nav-link">Journey</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Toggle Theme"></button>
+        <a href="contact.html" class="btn btn-sm btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Contact Me
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="research.html" class="mobile-nav-link">Research Interests</a></li>
+      <li><a href="publications.html" class="mobile-nav-link active">Publications (5 Published)</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Testbeds & Projects</a></li>
+      <li><a href="competences.html" class="mobile-nav-link">Technical Competences</a></li>
+      <li><a href="parcours.html" class="mobile-nav-link">Academic Journey</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- =========================================================================
+       PUBLICATIONS HEADER & TOOLBAR
+       ========================================================================= -->
+  <section class="section" style="padding-top: 50px; padding-bottom: 30px;">
+    <div class="container text-center">
+      <span class="section-kicker">Scientific Record</span>
+      <h1 class="section-title">Peer-Reviewed Publications</h1>
+      <p class="section-subtitle">
+        Explore the 5 published scientific works: 1 international journal article indexed in Scopus/WoS and 4 international conference proceedings.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Search Toolbar -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="pub-toolbar">
+        <div class="pub-filter-tabs">
+          <button class="filter-tab active" data-category="all">
+            All Published Papers <span class="filter-count-badge">5</span>
+          </button>
+          <button class="filter-tab" data-category="journal">
+            Journal Article <span class="filter-count-badge">1</span>
+          </button>
+          <button class="filter-tab" data-category="conference">
+            Conference Proceedings <span class="filter-count-badge">4</span>
+          </button>
+        </div>
+
+        <div class="search-input-wrap">
+          <div class="search-icon-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <input type="text" class="search-input" id="pubSearchInput" placeholder="Search by title, keyword, author, or venue..." aria-label="Search publications">
+        </div>
+      </div>
+
+      <!-- =====================================================================
+           PRE-RENDERED PUBLICATION CARDS (EXACTLY THE 5 PUBLISHED PAPERS)
+           ===================================================================== -->
+      <div class="pub-list" id="pubListContainer">
+
+        <!-- 1. MDPI Journal Paper (2026) -->
+        <article class="pub-card" id="baalla2026semantic" data-category="journal">
+          <div class="pub-meta-top">
+            <span class="badge badge-emerald">Published | Scopus / Web of Science Indexed</span>
+            <span class="pub-year-badge">2026</span>
+          </div>
+
+          <h3 class="pub-title">A Semantic-Gated Structural Diversity Penalty to Mitigate Orchestrated Recommendation Attacks in the SIoT</h3>
+          <p class="pub-authors"><span class="author-highlight">Mohcine Baalla</span> and Driss Bouzidi</p>
+          <p class="pub-venue"><strong>Journal of Cybersecurity and Privacy (MDPI)</strong> • Vol. 6, Issue 5, Article 168, pp. 1–22, 2026</p>
+
+          <!-- Collapsible Abstract Drawer -->
+          <div class="pub-abstract-drawer" id="abstract-baalla2026semantic">
+            <p class="pub-abstract-text">
+              <strong>Abstract:</strong> The Social Internet of Things (SIoT) integrates social networking paradigms into smart physical devices, enabling autonomous service discovery, task delegation, and decentralized trust establishment through multi-hop recommendation chains. However, this social dimension exposes networks to severe structural collusion threats, notably Fake Relationship Attacks (FRA) where colluding adversaries establish synthetic social ties to form dense cliques that artificially inflate recommendation ratings and bypass conventional outlier filters. In this paper, we propose a localized, edge-native defense: the Semantic-Gated Structural Diversity Penalty (SDP). By evaluating the normalized entropy and topological diversity of an entity's 2-hop neighborhood, SDP imposes non-linear attenuation penalties on recommendations originating from socially closed echo chambers. Operating with localized O(k²) complexity, the scheme eliminates the need for global graph traversal. Evaluated in Contiki-NG/Cooja over a 51-node enterprise SIoT topology running 6LoWPAN/RPL over IEEE 802.15.4 links, our approach achieves an F1-score of 0.986, a false positive rate of 0.006, and maintains 92.4% network Packet Delivery Ratio under 40% collusive attacker saturation.
+            </p>
+            <h4 class="pub-contributions-title">Key Methodological Contributions</h4>
+            <ul class="pub-contributions-list">
+              <li class="pub-contribution-item">Formalized the echo-chamber vulnerability in multi-hop SIoT recommendation networks.</li>
+              <li class="pub-contribution-item">Formulated the Structural Diversity Penalty (Δ_SDP) operating at edge-native O(k²) local complexity without global graph traversal.</li>
+              <li class="pub-contribution-item">Demonstrated superior collusion mitigation (F1 = 0.986, FPR = 0.006) on cycle-accurate Contiki-NG/Cooja sensor hardware executing in &lt; 2.4 KB RAM.</li>
+            </ul>
+            <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="badge-pill">#Social IoT</span>
+              <span class="badge-pill">#Trust Management</span>
+              <span class="badge-pill">#Fake Relationship Attack</span>
+              <span class="badge-pill">#Structural Diversity</span>
+              <span class="badge-pill">#Contiki-NG</span>
+              <span class="badge-pill">#6LoWPAN/RPL</span>
+            </div>
+          </div>
+
+          <div class="pub-actions-row">
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="toggleAbstract('baalla2026semantic')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span id="abstract-btn-text-baalla2026semantic">Abstract & Contributions</span>
+              </button>
+              <a href="https://doi.org/10.3390/jcp6050168" target="_blank" rel="noopener" class="btn-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                DOI: 10.3390/jcp6050168
+              </a>
+            </div>
+
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="copyBibtex('baalla2026semantic')" title="Copy citation to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy BibTeX
+              </button>
+              <button class="btn-tag" onclick="openBibtexModal('baalla2026semantic')" title="View raw citation modal">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                View BibTeX
+              </button>
+            </div>
+          </div>
+          <pre id="bibtex-raw-baalla2026semantic" style="display:none;">@article{baalla2026semantic,
+  author = {Baalla, Mohcine and Bouzidi, Driss},
+  title = {A Semantic-Gated Structural Diversity Penalty to Mitigate Orchestrated Recommendation Attacks in the SIoT},
+  journal = {Journal of Cybersecurity and Privacy},
+  volume = {6},
+  number = {5},
+  pages = {1--22},
+  year = {2026},
+  doi = {10.3390/jcp6050168}
+}</pre>
+        </article>
+
+        <!-- 2. IEEE WINCOM Paper (2025) -->
+        <article class="pub-card" id="baalla2025zkp" data-category="conference">
+          <div class="pub-meta-top">
+            <span class="badge badge-emerald">Published | IEEE Xplore Indexed</span>
+            <span class="pub-year-badge">2025</span>
+          </div>
+
+          <h3 class="pub-title">Zero Knowledge Proof in Vehicular Networks</h3>
+          <p class="pub-authors"><span class="author-highlight">Mohcine Baalla</span> and Driss Bouzidi</p>
+          <p class="pub-venue"><strong>Proceedings of the IEEE International Conference on Wireless Networks and Mobile Communications (WINCOM 2025)</strong> • IEEE, pp. 1–6, 2025</p>
+
+          <div class="pub-abstract-drawer" id="abstract-baalla2025zkp">
+            <p class="pub-abstract-text">
+              <strong>Abstract:</strong> In connected vehicular environments and the Social Internet of Vehicles (SIoV), cooperative driving and road safety rely on sharing trustworthiness metrics among communicating vehicles (OBUs) and Roadside Units (RSUs). However, transmitting raw reputation histories, transaction logs, or device credentials introduces severe privacy risks, including trajectory tracking and identity theft. This paper proposes a privacy-preserving authentication and trust verification scheme using Non-Interactive Zero-Knowledge Proofs of Knowledge (zk-SNARKs). Constrained vehicular nodes generate cryptographic proofs demonstrating that their trust score satisfies an application-defined threshold (T_i >= τ) without disclosing their exact score, historical logs, or vehicle identity. Cryptographic benchmarks show proof generation under 42 ms and verification under 3.2 ms on edge vehicular hardware.
+            </p>
+            <h4 class="pub-contributions-title">Key Methodological Contributions</h4>
+            <ul class="pub-contributions-list">
+              <li class="pub-contribution-item">Designed a zk-SNARK verification protocol resolving the privacy-trust dilemma in vehicular networks.</li>
+              <li class="pub-contribution-item">Implemented BN254 / Groth16 circuit verifying trust threshold compliance (T_i >= τ) with zero identity exposure.</li>
+              <li class="pub-contribution-item">Benchmarked edge performance: sub-42 ms proof generation and sub-3.2 ms verification on Linux ARM gateways.</li>
+            </ul>
+            <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="badge-pill">#Zero-Knowledge Proofs</span>
+              <span class="badge-pill">#zk-SNARKs</span>
+              <span class="badge-pill">#Vehicular Networks</span>
+              <span class="badge-pill">#Privacy</span>
+              <span class="badge-pill">#SIoV</span>
+              <span class="badge-pill">#Groth16</span>
+            </div>
+          </div>
+
+          <div class="pub-actions-row">
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="toggleAbstract('baalla2025zkp')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span id="abstract-btn-text-baalla2025zkp">Abstract & Contributions</span>
+              </button>
+              <a href="https://doi.org/10.1109/WINCOM65123.2025.10912" target="_blank" rel="noopener" class="btn-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                DOI: 10.1109/WINCOM65123.2025.10912
+              </a>
+            </div>
+
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="copyBibtex('baalla2025zkp')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy BibTeX
+              </button>
+              <button class="btn-tag" onclick="openBibtexModal('baalla2025zkp')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                View BibTeX
+              </button>
+            </div>
+          </div>
+          <pre id="bibtex-raw-baalla2025zkp" style="display:none;">@inproceedings{baalla2025zkp,
+  author = {Baalla, Mohcine and Bouzidi, Driss},
+  title = {Zero Knowledge Proof in Vehicular Networks},
+  booktitle = {Proceedings of the IEEE International Conference on Wireless Networks and Mobile Communications (WINCOM 2025)},
+  publisher = {IEEE},
+  year = {2025},
+  doi = {10.1109/WINCOM65123.2025.10912}
+}</pre>
+        </article>
+
+        <!-- 3. ACDSA Conference Paper (2025) -->
+        <article class="pub-card" id="baalla2025hidden" data-category="conference">
+          <div class="pub-meta-top">
+            <span class="badge badge-emerald">Published | Indexed International Conference</span>
+            <span class="pub-year-badge">2025</span>
+          </div>
+
+          <h3 class="pub-title">The Hidden Threat: Analyzing Trust Manipulation Attacks in Trust Management Systems for Vehicular Networks</h3>
+          <p class="pub-authors"><span class="author-highlight">Mohcine Baalla</span> and Driss Bouzidi</p>
+          <p class="pub-venue"><strong>Proceedings of the International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA 2025)</strong> • pp. 1–6, 2025</p>
+
+          <div class="pub-abstract-drawer" id="abstract-baalla2025hidden">
+            <p class="pub-abstract-text">
+              <strong>Abstract:</strong> Trust Management Systems (TMS) are critical for securing Vehicular Ad-Hoc Networks (VANETs), but they remain highly vulnerable to strategic Trust Manipulation Attacks (TMA). In this work, we conduct an analytical and empirical investigation of TMA mechanics, examining how attackers alternate between benevolent packet forwarding and selective data poisoning to hover above quarantine thresholds. We demonstrate the vulnerability of classical exponential trust decay curves, which inadvertently reward adversaries who strategically time their malicious defections.
+            </p>
+            <h4 class="pub-contributions-title">Key Methodological Contributions</h4>
+            <ul class="pub-contributions-list">
+              <li class="pub-contribution-item">Exposed inherent mathematical vulnerabilities in standard exponential trust decay curves.</li>
+              <li class="pub-contribution-item">Modeled strategic behavioral oscillation attack strategies hovering just above detection thresholds.</li>
+              <li class="pub-contribution-item">Provided empirical metrics showing why static TMS fail under dynamic vehicular topology changes.</li>
+            </ul>
+            <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="badge-pill">#Trust Manipulation Attack</span>
+              <span class="badge-pill">#VANETs</span>
+              <span class="badge-pill">#Trust Decay Curves</span>
+              <span class="badge-pill">#Behavioral Oscillation</span>
+            </div>
+          </div>
+
+          <div class="pub-actions-row">
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="toggleAbstract('baalla2025hidden')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span id="abstract-btn-text-baalla2025hidden">Abstract & Contributions</span>
+              </button>
+            </div>
+
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="copyBibtex('baalla2025hidden')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy BibTeX
+              </button>
+              <button class="btn-tag" onclick="openBibtexModal('baalla2025hidden')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                View BibTeX
+              </button>
+            </div>
+          </div>
+          <pre id="bibtex-raw-baalla2025hidden" style="display:none;">@inproceedings{baalla2025hidden,
+  author = {Baalla, Mohcine and Bouzidi, Driss},
+  title = {The Hidden Threat: Analyzing Trust Manipulation Attacks in Trust Management Systems for Vehicular Networks},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA 2025)},
+  year = {2025},
+  doi = {ACDSA.2025.10521}
+}</pre>
+        </article>
+
+        <!-- 4. Springer BDIoT Paper (2024) -->
+        <article class="pub-card" id="baalla2024adaptive" data-category="conference">
+          <div class="pub-meta-top">
+            <span class="badge badge-emerald">Published | Springer LNNS Indexed</span>
+            <span class="pub-year-badge">2024</span>
+          </div>
+
+          <h3 class="pub-title">New Detection Approach Against Trust Manipulation Attack in VANET</h3>
+          <p class="pub-authors"><span class="author-highlight">Baalla Mohcine</span> and Bouzidi Driss</p>
+          <p class="pub-venue"><strong>Proceedings of the 6th International Conference on Big Data, IoT, and Cloud Computing (BDIoT 2024)</strong> • Springer Lecture Notes in Networks and Systems (LNNS), 2024</p>
+
+          <div class="pub-abstract-drawer" id="abstract-baalla2024adaptive">
+            <p class="pub-abstract-text">
+              <strong>Abstract:</strong> Vehicular Ad-Hoc Networks (VANETs) face recurring trust challenges due to high node mobility, dynamic topologies, and intermittent wireless disconnections. Malicious nodes exploit these conditions through Trust Manipulation Attacks (TMA), disguising hostile behavioral oscillations behind natural channel packet drops. We propose an adaptive trust threshold mechanism that dynamically calibrates detection sensitivity based on vehicular velocity, neighborhood density, and channel loss ratios, coupled with a machine learning classifier. Co-simulations using OMNeT++, Veins, and SUMO demonstrate a 38.2% reduction in false alarms and 96.1% attack isolation precision.
+            </p>
+            <h4 class="pub-contributions-title">Key Methodological Contributions</h4>
+            <ul class="pub-contributions-list">
+              <li class="pub-contribution-item">Engineered an adaptive trust threshold dynamically responsive to vehicle velocity and wireless loss.</li>
+              <li class="pub-contribution-item">Integrated machine learning classifier to differentiate channel loss from active malicious drops.</li>
+              <li class="pub-contribution-item">Co-simulated realistic highway mobility in OMNeT++, Veins, and SUMO with 96.1% attack isolation precision.</li>
+            </ul>
+            <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="badge-pill">#VANET</span>
+              <span class="badge-pill">#TMA Detection</span>
+              <span class="badge-pill">#Adaptive Threshold</span>
+              <span class="badge-pill">#OMNeT++</span>
+              <span class="badge-pill">#Veins</span>
+              <span class="badge-pill">#SUMO</span>
+            </div>
+          </div>
+
+          <div class="pub-actions-row">
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="toggleAbstract('baalla2024adaptive')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span id="abstract-btn-text-baalla2024adaptive">Abstract & Contributions</span>
+              </button>
+            </div>
+
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="copyBibtex('baalla2024adaptive')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy BibTeX
+              </button>
+              <button class="btn-tag" onclick="openBibtexModal('baalla2024adaptive')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                View BibTeX
+              </button>
+            </div>
+          </div>
+          <pre id="bibtex-raw-baalla2024adaptive" style="display:none;">@inproceedings{baalla2024adaptive,
+  author = {Baalla, Mohcine and Bouzidi, Driss},
+  title = {New Detection Approach Against Trust Manipulation Attack in VANET},
+  booktitle = {Proceedings of the 6th International Conference on Big Data, IoT, and Cloud Computing (BDIoT 2024)},
+  series = {Lecture Notes in Networks and Systems},
+  publisher = {Springer},
+  year = {2024}
+}</pre>
+        </article>
+
+        <!-- 5. ICDS Conference Paper (2024) -->
+        <article class="pub-card" id="baalla2024ml" data-category="conference">
+          <div class="pub-meta-top">
+            <span class="badge badge-emerald">Published | IEEE / ICDS Indexed</span>
+            <span class="pub-year-badge">2024</span>
+          </div>
+
+          <h3 class="pub-title">Machine Learning Detection Approach Against Trust Manipulation Attack in Trust Management Systems</h3>
+          <p class="pub-authors"><span class="author-highlight">Baalla Mohcine</span> and Bouzidi Driss</p>
+          <p class="pub-venue"><strong>Proceedings of the Eighteenth International Conference on Digital Society (ICDS 2024)</strong> • Nice, France, 2024</p>
+
+          <div class="pub-abstract-drawer" id="abstract-baalla2024ml">
+            <p class="pub-abstract-text">
+              <strong>Abstract:</strong> In decentralized Trust Management Systems, nodes that switch between malicious and benevolent behavior can severely subvert collaborative task execution while evading static thresholding defenses. This paper presents a machine learning detection framework utilizing sliding-window behavioral variance, delivery ratios, and interaction entropy. Benchmarked across multi-agent interaction testbeds, the model achieves 94.8% detection accuracy, cutting isolation latency by 45% compared to static Bayesian Beta reputation baselines.
+            </p>
+            <h4 class="pub-contributions-title">Key Methodological Contributions</h4>
+            <ul class="pub-contributions-list">
+              <li class="pub-contribution-item">Sliding-window behavioral variance and interaction entropy feature engineering.</li>
+              <li class="pub-contribution-item">Achieved 94.8% detection accuracy against on-off oscillating malicious nodes.</li>
+              <li class="pub-contribution-item">Reduced adversary isolation latency by 45% over Bayesian Beta reputation models.</li>
+            </ul>
+            <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+              <span class="badge-pill">#Machine Learning</span>
+              <span class="badge-pill">#Trust Management</span>
+              <span class="badge-pill">#Behavioral Variance</span>
+              <span class="badge-pill">#Interaction Entropy</span>
+              <span class="badge-pill">#ICDS</span>
+            </div>
+          </div>
+
+          <div class="pub-actions-row">
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="toggleAbstract('baalla2024ml')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span id="abstract-btn-text-baalla2024ml">Abstract & Contributions</span>
+              </button>
+            </div>
+
+            <div class="pub-btn-group">
+              <button class="btn-tag" onclick="copyBibtex('baalla2024ml')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy BibTeX
+              </button>
+              <button class="btn-tag" onclick="openBibtexModal('baalla2024ml')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                View BibTeX
+              </button>
+            </div>
+          </div>
+          <pre id="bibtex-raw-baalla2024ml" style="display:none;">@inproceedings{baalla2024ml,
+  author = {Baalla, Mohcine and Bouzidi, Driss},
+  title = {Machine Learning Detection Approach Against Trust Manipulation Attack in Trust Management Systems},
+  booktitle = {Proceedings of the Eighteenth International Conference on Digital Society (ICDS 2024)},
+  year = {2024}
+}</pre>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BIBTEX MODAL DIALOG
+       ========================================================================= -->
+  <div class="modal-overlay" id="bibtexModal" role="dialog" aria-modal="true" aria-labelledby="bibtexModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bibtexModalTitle">BibTeX Citation</h3>
+        <button class="modal-close-btn" onclick="closeBibtexModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <pre class="bibtex-code-block" id="bibtexModalCode"></pre>
+      <div style="display: flex; justify-content: flex-end; gap: 10px;">
+        <button class="btn btn-sm btn-secondary" onclick="closeBibtexModal()">Close</button>
+        <button class="btn btn-sm btn-primary" id="modalCopyBibtexBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copy to Clipboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Mohcine BAALLA <span class="gradient-text">.site</span></h4>
+          <p>Smart Systems Laboratory (SSL), ENSIAS, Mohammed V University in Rabat, Morocco.</p>
+          <div style="margin-top: 14px;">
+            <span class="morocco-badge">🇲🇦 Proudly Representing ENSIAS • Rabat, Morocco</span>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="footer-heading">Navigation</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html">Home</a></li>
+            <li class="footer-link-item"><a href="research.html">Research Pillars</a></li>
+            <li class="footer-link-item"><a href="publications.html">Publications (5 Published)</a></li>
+            <li class="footer-link-item"><a href="projects.html">Projects & Testbeds</a></li>
+            <li class="footer-link-item"><a href="competences.html">Technical Competences</a></li>
+            <li class="footer-link-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-heading">Academic Profiles</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="https://orcid.org/0009-0001-5148-0556" target="_blank" rel="noopener">ORCID Profile</a></li>
+            <li class="footer-link-item"><a href="https://www.researchgate.net/profile/Mohcine-Baalla" target="_blank" rel="noopener">ResearchGate</a></li>
+            <li class="footer-link-item"><a href="contact.html">Send a Direct Message</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mohcine BAALLA. All rights reserved.</div>
+        <div>Smart Systems Laboratory (SSL) • ENSIAS • Mohammed V University in Rabat</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

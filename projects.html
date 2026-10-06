@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testbeds & Research Projects | Mohcine BAALLA | ENSIAS Rabat</title>
+  <meta name="description"
+    content="Doctoral simulation testbeds (Contiki-NG/Cooja, OMNeT++/Veins/SUMO, PyTorch Geometric CTDG, zk-SNARKs) and software engineering projects by Mohcine BAALLA.">
+  <link rel="canonical" href="https://mohcine.site/projects.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mohcine.site/projects.html">
+  <meta property="og:title" content="Simulation Testbeds & Projects | Mohcine BAALLA">
+  <meta property="og:description"
+    content="Hardware-accurate IoT emulation, vehicular co-simulation, and continuous-time graph learning architectures.">
+  <meta property="og:image" content="https://mohcine.site/assets/images/siot_trust_architecture.jpg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Mohcine Baalla Homepage">
+        <div class="brand-symbol">MB</div>
+        <div class="brand-text">
+          <span class="brand-name">Mohcine BAALLA <span class="badge badge-sapphire"
+              style="font-size: 0.68rem; padding: 2px 6px;">ENSIAS</span></span>
+          <span class="brand-tag">Smart Systems Lab (SSL) • UM5</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="competences.html" class="nav-link">Competences</a></li>
+          <li><a href="parcours.html" class="nav-link">Journey</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Toggle Theme"></button>
+        <a href="contact.html" class="btn btn-sm btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+          </svg>
+          Contact Me
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="research.html" class="mobile-nav-link">Research Interests</a></li>
+      <li><a href="publications.html" class="mobile-nav-link">Publications (5 Published)</a></li>
+      <li><a href="projects.html" class="mobile-nav-link active">Testbeds & Projects</a></li>
+      <li><a href="competences.html" class="mobile-nav-link">Technical Competences</a></li>
+      <li><a href="parcours.html" class="mobile-nav-link">Academic Journey</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- =========================================================================
+       PROJECTS HEADER
+       ========================================================================= -->
+  <section class="section" style="padding-top: 50px; padding-bottom: 30px;">
+    <div class="container text-center">
+      <span class="section-kicker">Experimental Platforms & Engineering</span>
+      <h1 class="section-title">Research Testbeds & Engineering Projects</h1>
+      <p class="section-subtitle">
+        Cycle-accurate IoT sensor emulators, microscopic vehicular mobility co-simulations, deep graph AI pipelines, and
+        cybersecurity tooling.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Toolbar -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="pub-toolbar">
+        <div class="pub-filter-tabs">
+          <button class="filter-tab project-filter-tab active" data-category="all">
+            All Projects & Testbeds
+          </button>
+          <button class="filter-tab project-filter-tab" data-category="testbed">
+            Doctoral Core Testbeds
+          </button>
+          <button class="filter-tab project-filter-tab" data-category="ml">
+            AI & Graph Neural Networks
+          </button>
+          <button class="filter-tab project-filter-tab" data-category="security">
+            Cybersecurity & Systems
+          </button>
+          <button class="filter-tab project-filter-tab" data-category="dev">
+            Full-Stack Web & Networks
+          </button>
+        </div>
+      </div>
+
+      <!-- =====================================================================
+           PRE-RENDERED PROJECTS GRID
+           ===================================================================== -->
+      <div class="projects-grid" id="projectsContainer">
+
+        <!-- 1. Contiki-NG / Cooja -->
+        <div class="project-card" data-category="testbed">
+          <div class="project-category-row">
+            <span class="badge badge-sapphire">Doctoral Research Testbed</span>
+            <span class="badge badge-amber">Doctoral Core</span>
+          </div>
+          <h3 class="project-title">Contiki-NG & Cooja Sensor Emulation Testbed</h3>
+          <p class="project-subtitle">Hardware-accurate cycle-level emulation of constrained IoT devices</p>
+          <p class="project-desc">
+            Developed and calibrated a 51-node distributed enterprise SIoT testbed on Contiki-NG and Cooja. Emulates
+            Tmote Sky / MSP430 sensor nodes with CC2420 wireless transceivers executing 6LoWPAN, RPL routing, and IEEE
+            802.15.4 links. Implements edge-native C modules for the Structural Diversity Penalty (SDP) operating in
+            under 2.4 KB RAM.
+          </p>
+          <div class="project-metrics-box">51+ Distributed Nodes | &lt;2.4 KB RAM | F1-Score: 98.6%</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">Contiki-NG</span>
+            <span class="tech-pill">Cooja</span>
+            <span class="tech-pill">C / Embedded C</span>
+            <span class="tech-pill">6LoWPAN</span>
+            <span class="tech-pill">RPL</span>
+            <span class="tech-pill">IEEE 802.15.4</span>
+          </div>
+        </div>
+
+        <!-- 2. OMNeT++ / Veins / SUMO -->
+        <div class="project-card" data-category="testbed">
+          <div class="project-category-row">
+            <span class="badge badge-sapphire">Doctoral Research Testbed</span>
+            <span class="badge badge-amber">Doctoral Core</span>
+          </div>
+          <h3 class="project-title">OMNeT++, Veins & SUMO Vehicular Co-Simulation</h3>
+          <p class="project-subtitle">High-fidelity macroscopic and microscopic vehicular ad-hoc co-simulation</p>
+          <p class="project-desc">
+            Coupled simulation platform linking SUMO (realistic vehicle kinematics and microscopic road traffic in
+            urban/highway environments), Veins (IEEE 802.11p DSRC wireless vehicular physics), and OMNeT++ (discrete
+            event network protocols). Benchmarks adaptive trust thresholds and machine learning TMA detectors under
+            dynamic vehicle speeds.
+          </p>
+          <div class="project-metrics-box">High-speed Highway Mobility | 96.1% Attack Isolation Precision</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">OMNeT++</span>
+            <span class="tech-pill">Veins</span>
+            <span class="tech-pill">SUMO</span>
+            <span class="tech-pill">C++</span>
+            <span class="tech-pill">IEEE 802.11p</span>
+            <span class="tech-pill">Python</span>
+          </div>
+        </div>
+
+        <!-- 3. CTDG PyG Framework -->
+        <div class="project-card" data-category="testbed">
+          <div class="project-category-row">
+            <span class="badge badge-sapphire">Doctoral Research Testbed</span>
+            <span class="badge badge-amber">Doctoral Core</span>
+          </div>
+          <h3 class="project-title">Continuous-Time Dynamic Graph (CTDG) Framework</h3>
+          <p class="project-subtitle">Relational deep graph learning pipeline for asynchronous IoT interaction streams
+          </p>
+          <p class="project-desc">
+            Engineered deep graph neural network pipelines built with PyTorch Geometric (PyG) and PyG Temporal.
+            Evaluates continuous interaction event streams, computes multi-head relational attention, and maintains
+            dynamic node embeddings to isolate GAN-driven Pareto temporal mimicry and long-horizon delayed behavioral
+            switching.
+          </p>
+          <div class="project-metrics-box">Average Precision: 0.9707 | FPR: 0.0023 | 0.17 ms Inference Latency</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">PyTorch Geometric</span>
+            <span class="tech-pill">PyG Temporal</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">CUDA</span>
+            <span class="tech-pill">Continuous-Time Graphs</span>
+          </div>
+        </div>
+
+        <!-- 4. zk-SNARKs Edge Prover -->
+        <div class="project-card" data-category="testbed">
+          <div class="project-category-row">
+            <span class="badge badge-sapphire">Doctoral Research Testbed</span>
+            <span class="badge badge-amber">Doctoral Core</span>
+          </div>
+          <h3 class="project-title">Edge Zero-Knowledge Cryptographic Prover (zk-SNARKs)</h3>
+          <p class="project-subtitle">Privacy-preserving trust proof generation for resource-constrained gateways</p>
+          <p class="project-desc">
+            Cryptographic testbed utilizing BN254 elliptic curves and Groth16 zk-SNARK proof systems. Benchmarked on
+            embedded edge processors and Linux ARM gateways to achieve sub-42 ms proof generation and sub-3.2 ms
+            verification of trust threshold compliance without leaking identities or trajectories.
+          </p>
+          <div class="project-metrics-box">&lt;42 ms Proof Generation | &lt;3.2 ms Verification on ARM Linux</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">zk-SNARKs</span>
+            <span class="tech-pill">Groth16</span>
+            <span class="tech-pill">BN254</span>
+            <span class="tech-pill">Rust / C++</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">ARM Linux</span>
+          </div>
+        </div>
+
+        <!-- 5. RallyAI Gold Prize Winner Project -->
+        <div class="project-card" data-category="security">
+          <div class="project-category-row">
+            <span class="badge badge-amber">1st Place Gold Prize</span>
+            <span class="badge badge-sapphire">RallyAI Merzouga</span>
+            <span class="badge badge-emerald">Ministry Award</span>
+          </div>
+          <h3 class="project-title">Sovereign AI & Cryptographic Trust Architecture</h3>
+          <p class="project-subtitle">National Gold Prize Winning System in Security & Sovereignty Track</p>
+          <p class="project-desc">
+            Designed and defended the winning sovereign security architecture at the national RallyAI competition
+            organized by the Moroccan Ministry of Digital Transition and Administrative Reform. Combines
+            hardware-anchored remote attestation, decentralized trust consensus, and explainable AI models to protect
+            critical national infrastructure against adversarial manipulation.
+          </p>
+          <div class="project-metrics-box">1st Place Gold Prize Winner • Sovereign Architecture • Ministry Award</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">Sovereign AI</span>
+            <span class="tech-pill">Cryptographic Attestation</span>
+            <span class="tech-pill">Decentralized Trust</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Cybersecurity</span>
+          </div>
+        </div>
+
+        <!-- 6. Anomaly Detection ML -->
+        <div class="project-card" data-category="ml">
+          <div class="project-category-row">
+            <span class="badge badge-emerald">AI & Machine Learning</span>
+          </div>
+          <h3 class="project-title">Anomaly Detection in IoT Networks Using Deep Learning</h3>
+          <p class="project-subtitle">Multi-layer neural network architecture for zero-day threat detection</p>
+          <p class="project-desc">
+            Engineered an end-to-end deep learning framework analyzing packet capture sequences and telemetry in IoT
+            environments. Evaluates flow feature vectors to distinguish benign sensor traffic from stealthy scanning and
+            botnet orchestrations.
+          </p>
+          <div class="project-metrics-box">High-precision Anomaly Classification & Telemetry Dissection</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">PyTorch / TensorFlow</span>
+            <span class="tech-pill">Scikit-learn</span>
+            <span class="tech-pill">Wireshark</span>
+            <span class="tech-pill">Data Mining</span>
+          </div>
+        </div>
+
+        <!-- 6. GNN Attack Detection -->
+        <div class="project-card" data-category="ml">
+          <div class="project-category-row">
+            <span class="badge badge-emerald">AI & Graph AI</span>
+          </div>
+          <h3 class="project-title">Graph Neural Network for Attack Detection</h3>
+          <p class="project-subtitle">Topological feature aggregation over network communication graphs</p>
+          <p class="project-desc">
+            Constructed graph convolutional networks (GCN) and Graph Attention Networks (GAT) to model inter-node
+            communication topologies, detecting distributed denial-of-service and collusive Sybil nodes through
+            structural neighborhood anomaly scores.
+          </p>
+          <div class="project-metrics-box">Robust Topological Anomaly Detection over Communication Edges</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">PyTorch Geometric</span>
+            <span class="tech-pill">NetworkX</span>
+            <span class="tech-pill">Graph AI</span>
+            <span class="tech-pill">Python</span>
+          </div>
+        </div>
+
+        <!-- 7. Port Scanner -->
+        <div class="project-card" data-category="security">
+          <div class="project-category-row">
+            <span class="badge badge-cyan">Cybersecurity & Systems</span>
+          </div>
+          <h3 class="project-title">Multi-Threaded Port Scanner & Banner Grabber</h3>
+          <p class="project-subtitle">High-speed network reconnaissance and service enumeration tool</p>
+          <p class="project-desc">
+            Developed an asynchronous multi-threaded port scanner in Python capable of rapid TCP SYN/Connect scanning,
+            protocol fingerprinting, and automated banner grabbing with integrated rate limiting.
+          </p>
+          <div class="project-metrics-box">Fast Asynchronous Socket Scanning & Custom Banner Fingerprinting</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Socket Programming</span>
+            <span class="tech-pill">Multi-threading</span>
+            <span class="tech-pill">Network Security</span>
+          </div>
+        </div>
+
+        <!-- 8. DOS/DDOS Detection -->
+        <div class="project-card" data-category="security">
+          <div class="project-category-row">
+            <span class="badge badge-cyan">Cybersecurity & ML</span>
+          </div>
+          <h3 class="project-title">DOS/DDOS Attack Detection Using Machine Learning</h3>
+          <p class="project-subtitle">Real-time flow telemetry classifier against high-volume flood attacks</p>
+          <p class="project-desc">
+            Implemented random forest and XGBoost classification models over high-speed network flow records
+            (NetFlow/IPFIX) to identify SYN floods, UDP amplification, and HTTP floods with sub-second alerting.
+          </p>
+          <div class="project-metrics-box">&gt;99% Detection Accuracy on Flow Benchmark Traces</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Scikit-learn</span>
+            <span class="tech-pill">XGBoost</span>
+            <span class="tech-pill">Pandas</span>
+            <span class="tech-pill">Network Security</span>
+          </div>
+        </div>
+
+        <!-- 9. Carpooling Platform -->
+        <div class="project-card" data-category="dev">
+          <div class="project-category-row">
+            <span class="badge badge-cyan">Full-Stack Web App</span>
+          </div>
+          <h3 class="project-title">Carpooling Web Application Platform</h3>
+          <p class="project-subtitle">Full-stack university ride-sharing portal with geolocation and scheduling</p>
+          <p class="project-desc">
+            Architected and deployed a responsive web platform facilitating university carpooling with route matching,
+            user reputation ratings, secure authentication, and real-time scheduling.
+          </p>
+          <div class="project-metrics-box">Production-Ready Full-Stack Architecture & Geolocation Routing</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Express.js</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- 10. Web Security Hardening -->
+        <div class="project-card" data-category="security">
+          <div class="project-category-row">
+            <span class="badge badge-cyan">Cybersecurity & Web</span>
+          </div>
+          <h3 class="project-title">Hardened Web Security Architecture with JWT & TLS/SSL</h3>
+          <p class="project-subtitle">Defense-in-depth web application security hardening and forensic logging</p>
+          <p class="project-desc">
+            Implemented secure authentication pipelines with JWT token rotation, cryptographic hashing, granular logging
+            levels, rate limiting, and strict TLS/SSL configuration.
+          </p>
+          <div class="project-metrics-box">Strict OWASP Top 10 Compliance & Immutable Audit Logs</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">JWT</span>
+            <span class="tech-pill">TLS/SSL</span>
+            <span class="tech-pill">Security Hardening</span>
+            <span class="tech-pill">Logging Frameworks</span>
+          </div>
+        </div>
+
+        <!-- 11. GNS3 IPv6 Tunneling -->
+        <div class="project-card" data-category="dev">
+          <div class="project-category-row">
+            <span class="badge badge-cyan">Network Engineering</span>
+          </div>
+          <h3 class="project-title">IPv6-over-IPv4 Tunneling Architecture in GNS3</h3>
+          <p class="project-subtitle">Transition mechanism simulation with dynamic routing protocols</p>
+          <p class="project-desc">
+            Configured dual-stack routing environments, automatic 6to4 tunnels, and GRE tunneling over simulated
+            enterprise topologies running OSPFv3 and BGP.
+          </p>
+          <div class="project-metrics-box">Dual-Stack Interoperability & OSPFv3 Tunneling</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">GNS3</span>
+            <span class="tech-pill">Cisco IOS</span>
+            <span class="tech-pill">IPv6</span>
+            <span class="tech-pill">GRE Tunneling</span>
+            <span class="tech-pill">OSPFv3</span>
+            <span class="tech-pill">Wireshark</span>
+          </div>
+        </div>
+
+        <!-- 12. ISO 27001 ISMS -->
+        <div class="project-card" data-category="security">
+          <div class="project-category-row">
+            <span class="badge badge-cyan">Information Security Governance</span>
+          </div>
+          <h3 class="project-title">ISO/IEC 27001 & ISO 27003 Implementation Case Study</h3>
+          <p class="project-subtitle">Comprehensive information security management system (ISMS) audit</p>
+          <p class="project-desc">
+            Authored an end-to-end ISMS implementation blueprint covering risk assessment matrices, Statement of
+            Applicability (SoA), security control mapping, and incident management procedures.
+          </p>
+          <div class="project-metrics-box">Comprehensive ISMS Blueprint & Risk Matrices</div>
+          <div class="tech-tags-wrap">
+            <span class="tech-pill">ISO/IEC 27001</span>
+            <span class="tech-pill">ISO 27003</span>
+            <span class="tech-pill">Risk Management</span>
+            <span class="tech-pill">Compliance Audit</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Mohcine BAALLA <span class="gradient-text">.site</span></h4>
+          <p>Smart Systems Laboratory (SSL), ENSIAS, Mohammed V University in Rabat, Morocco.</p>
+          <div style="margin-top: 14px;">
+            <span class="morocco-badge">🇲🇦 Proudly Representing ENSIAS • Rabat, Morocco</span>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="footer-heading">Navigation</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html">Home</a></li>
+            <li class="footer-link-item"><a href="research.html">Research Pillars</a></li>
+            <li class="footer-link-item"><a href="publications.html">Publications (5 Published)</a></li>
+            <li class="footer-link-item"><a href="projects.html">Projects & Testbeds</a></li>
+            <li class="footer-link-item"><a href="competences.html">Technical Competences</a></li>
+            <li class="footer-link-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-heading">Academic Profiles</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="https://orcid.org/0009-0001-5148-0556" target="_blank"
+                rel="noopener">ORCID Profile</a></li>
+            <li class="footer-link-item"><a href="https://www.researchgate.net/profile/Mohcine-Baalla" target="_blank"
+                rel="noopener">ResearchGate</a></li>
+            <li class="footer-link-item"><a href="contact.html">Send a Direct Message</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mohcine BAALLA. All rights reserved.</div>
+        <div>Smart Systems Laboratory (SSL) • ENSIAS • Mohammed V University in Rabat</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top"><svg width="20" height="20"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15" />
+    </svg></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
