@@ -23,7 +23,7 @@ const RESEARCHER_INFO = {
   githubUrl: "https://github.com/MohcineBAALLA",
   linkedinUrl: "https://linkedin.com/in/mohcinebaalla",
   domain: "https://mohcine.site",
-  fellowship: "Recipient of the PhD-Associate Scholarship (PASS) – CNRST & Ministry of Higher Education"
+  affiliation: "CEDoc ST2I – Smart Systems Laboratory (SSL), ENSIAS"
 };
 
 const METRICS_DATA = [
@@ -56,10 +56,10 @@ const METRICS_DATA = [
     badgeClass: "badge-amber"
   },
   {
-    count: "PASS",
-    suffix: " Scholar",
-    label: "CNRST Fellowship",
-    detail: "National Excellence Award in AI & Cybersecurity",
+    count: "4th",
+    suffix: " Year",
+    label: "Doctoral Researcher",
+    detail: "Smart Systems Laboratory (SSL) • ENSIAS Rabat",
     badgeClass: "badge-purple"
   }
 ];
@@ -393,13 +393,13 @@ const PARCOURS_MILESTONES = [
   },
   {
     year: "November 2023",
-    category: "award",
-    title: "Commencement of Doctoral Research & CNRST PASS Fellowship",
-    institution: "Smart Systems Laboratory (SSL), ENSIAS Rabat • Bourse N° 32 UM5R2023",
-    badge: "National Fellowship Award",
-    badgeClass: "badge-amber",
-    icon: "zap",
-    description: "Formally registered in the Computer Science doctoral program at CEDoc ST2I under the supervision of Prof. Driss BOUZIDI. Awarded the highly selective PhD-Associate Scholarship (PASS) by the National Center for Scientific and Technical Research (CNRST) and the Ministry of Higher Education, funding elite doctoral research in Artificial Intelligence and Cybersecurity."
+    category: "education",
+    title: "Commencement of Doctoral Research in Computer Science & Cybersecurity",
+    institution: "Smart Systems Laboratory (SSL), ENSIAS • Mohammed V University in Rabat",
+    badge: "Doctoral Research",
+    badgeClass: "badge-sapphire",
+    icon: "book-open",
+    description: "Formally registered in the Computer Science doctoral program at CEDoc ST2I under the supervision of Prof. Driss BOUZIDI. Conducting advanced research on trust management architectures, resilient decentralized protocols, and graph-based threat mitigation in the Social Internet of Things (SIoT) and vehicular networks."
   },
   {
     year: "2021 – 2023",
